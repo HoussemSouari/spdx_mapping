@@ -1,0 +1,29 @@
+================================================================================
+LICENSE DETECTION BENCHMARK REPORT
+================================================================================
+
+RESULTS SUMMARY
+--------------------------------------------------------------------------------
+        detector  dataset  accuracy  f1_macro  execution_time  avg_time_per_sample
+   ml_classifier scancode  0.794045  0.689366        0.805845             0.002000
+    scancode_api scancode  0.000000  0.000000        0.001260             0.000003
+     naive_bayes scancode  0.652605  0.526426        0.162083             0.000402
+tfidf_similarity scancode  0.248139  0.298143        0.815278             0.002023
+keyword_matching scancode  0.208437  0.054694        0.209493             0.000520
+
+BEST PERFORMANCE BY METRIC
+--------------------------------------------------------------------------------
+ACCURACY: ml_classifier on scancode = 0.7940
+F1_MACRO: ml_classifier on scancode = 0.6894
+PRECISION_MACRO: ml_classifier on scancode = 0.6854
+RECALL_MACRO: ml_classifier on scancode = 0.7106
+
+SPEED COMPARISON
+--------------------------------------------------------------------------------
+scancode_api                   |    0.0 ms/sample
+naive_bayes                    |    0.4 ms/sample
+keyword_matching               |    0.5 ms/sample
+ml_classifier                  |    2.0 ms/sample
+tfidf_similarity               |    2.0 ms/sample
+
+================================================================================
